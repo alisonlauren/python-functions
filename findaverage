@@ -1,0 +1,19 @@
+#define a function called average
+def average(x, y, z):
+    #set sum equal to all numbers combined
+    Sum = x + y + z
+    #set average to sum of numbers divided by 3
+    Average = Sum/3
+    #print statement of your aveage is...
+    print(f'Your average is {Average}.')
+    
+    
+# Allows User to enter three values
+#enter all three values available for input and make sure they are integers
+a = int(input("\nPlease Enter the First Value. a =  "))
+b = int(input("\nPlease Enter the Second Value. b =  "))
+c = int(input("\nPlease Enter the Third Value. c =  "))
+
+# Calling the Function
+average(a, b, c)
+
