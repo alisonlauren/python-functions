@@ -52,15 +52,30 @@ print(my_new_list)
 
 ## reverse string
 
-def my_function(x):
+def reverse_this(x):
     return x[::-1]
 
 ##In this particular example, the slice statement [::-1] means start at 
 # the end of the string and end at position 0, move with the step -1, 
 # negative one, which means one step backwards.
 
-myString = my_function(" How does this look now that it's backward")
+myString = reverse_this(" How does this look now that it's backward")
 print(myString)
+
+## multiply vector 
+
+firstList = [5, 2, 3]
+secondList = [1, 5, 4]
+multiply = []
+for number1, number2 in zip(firstList, secondList):
+    multiply.append(number1 * number2)
+print(multiply)
+
+## the zip function in Python 3 returns an iterator. 
+# Iterators can only be exhausted (by something like making 
+# a list out of them) once. The purpose of this is to save 
+# memory by only generating the elements of the iterator as you 
+# need them, rather than putting it all into memory at once.
 
 
 
