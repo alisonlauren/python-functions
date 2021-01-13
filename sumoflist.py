@@ -13,7 +13,6 @@ print("Sum is: ", total)
 list1 = [1,2,3,4,5,6]
 print("Largest element is:" , max(list1))
 
-
 # find smallest number
 list2 = [0,1,2,3,4,5,6]
 print("Smallest element is: ", min(list2))
