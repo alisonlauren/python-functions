@@ -6,6 +6,10 @@ list =  [1,2,4,5]
 for element in range(0, len(list)):
     total = total + list[element]
 
+
+total1 = sum(list)
+print("Sum is: ", total1)
+
 print("Sum is: ", total)
 
 # find largest in list
