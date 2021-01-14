@@ -80,5 +80,14 @@ print(multiply)
 # memory by only generating the elements of the iterator as you 
 # need them, rather than putting it all into memory at once.
 
+list_A = [2, 3, 4]
+list_B = [2, 3, 4]
+print("The first given list is %s" % list_A)
+print('The second given list is %s' % list_B)
+result = [] 
+for i in range(0, len(list_A)): 
+    result.append(list_A[i] * list_B[i]) 
+print('Results of multiplication is: ', result)
+
 
 
