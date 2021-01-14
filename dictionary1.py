@@ -92,7 +92,7 @@ print(" ")
 
 
 
-
+#-----------------------------------------------------------
 #importing data into a file.
 
 ##import pickle
@@ -100,12 +100,38 @@ print(" ")
 #with open('heroes.txt', 'rb') as file_handle
     # old_message = pickle.load(file_handle)
     # print(f'Old message is: "{old_message}"')
-
 ## message = "marvel is better than dc"
-
-
 #with open('heroes.txt', 'wb') as file_handle:
     #pickle.dump(user_input, file_handle)
+
+#------------------------------------------------------------
+### import data using json
+
+# import json
+
+#with open("locations.json", "w") as file_handle:
+      #digitalcrafts = json.load(file_handle)
+
+      # for country in digitalcrafts
+        # for region in digitalcrafts[country]:
+            # for city in digitalcrafts[country][region]:
+                # print (f'{country}: {city}, {region}')
+
+## adding data
+
+#new_location = input("New Country: ")
+#new_region = input("New Region: ")
+
+#digitalcrafts[new_location] = {
+#         new region: {
+                # new_city: new_address
+# }
+# }
+
+#with open('locations.json', 'w') as file_handle
+      #json.dump(digitalcrafts, file_handle)
+
+#---------------------------------------------------------------
 
 
 
