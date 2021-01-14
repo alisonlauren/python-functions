@@ -15,5 +15,19 @@ while True:
     print(message)
 
     
-        
+def make_formal_greeting(name, title, location):
+    return f"{intro} {name}, the {title} of {location}"
+
+intro = "Now comes"
+result = make_formal_greeting("Rob", "King", "The North")
+print(result)
+
+result = make_formal_greeting("The North", "Rob", "King")
+print(result)
+
+result = make_formal_greeting("Sadie", "Doggie", "Kingwood")
+print(result)
+
+
+
 
