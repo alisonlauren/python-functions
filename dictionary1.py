@@ -22,6 +22,9 @@ print(phonebook_dict)
 print("==================================")
 print(" ")
 
+for key, value in phonebook_dict.items():
+      phonebook_dict["Bob"] = '968-345-2345'
+
 ##Small Exercise Two
 
 ramit = {

@@ -14,14 +14,16 @@
 
 ##Answer 1:
 
-def palindrome(string):
-    reversedString = ""
-    for i in reversed(range(len(string))):
-        reversedString += string[i]
-    return string == reversedString
+string = input("Please Enter your own single word: ")
+#what is that? its slicing and when you write it this way
+#it starts from the end towards the first, using index values
+if(string == string[:: -1]):
+    print("True")
+else:
+    print("False")
 
-print(palindrome("hello"))
-print(palindrome("racecar"))
+
+
 
 ##Answer 2: 
 
@@ -30,5 +32,5 @@ def isPalindrome(string, i =0):
     return True if i >= j else string[i] == string[j] and isPalindrome(string, i + 1)
 
 
-print(isPalindrome("nun"))
-print(isPalindrome("pancakes"))
+# print(isPalindrome("nun"))
+# print(isPalindrome("pancakes"))
