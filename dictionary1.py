@@ -92,6 +92,18 @@ print("------Count Friends Function-----")
 print(countFriends(ramit))
 print(" ")
 
+## medium exercise
+
+user_input = (input("please enter a word: "))
+myDictionary = {}
+
+for value in user_input:
+  if value in myDictionary:
+    myDictionary[value] += 1
+  else: 
+    myDictionary[value] = 1
+
+print((myDictionary))
 
 
 
@@ -138,3 +150,13 @@ print(" ")
 
 
 
+user_input = (input("please enter a word"))
+myDictionary = {}
+
+for value in user_input:
+  if value in myDictionary:
+    myDictionary[i] += 1
+  else: 
+    newDict[i] = 1
+
+print((myDictionary))
