@@ -179,5 +179,4 @@ def word_count(str):
         sortedCounts[value] = counts[value]
     
     return sortedCounts
-       
 print(word_count(user_input))
