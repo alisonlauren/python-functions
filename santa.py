@@ -10,4 +10,3 @@ elif user_input.lower() == 'bad':
 else:
     print("Try again, either say good or bad")
 
-#question 2:
