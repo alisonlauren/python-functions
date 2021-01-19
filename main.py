@@ -1,6 +1,6 @@
-from pet import Pet, CuddlyPet
+from pet import Pet, CuddlyPet, DayOldPotatoChildUnderCouch, humanFoodLeftOnTable, Bones
 from menu import Menu
-from pet import Bones, DayOldPotatoChildUnderCouch, humanFoodLeftOnTable
+from toy import Toy
 
 # Begin with no pets.
 pets = []

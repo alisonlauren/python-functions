@@ -33,6 +33,12 @@ class CuddlyPet(Pet):
     def __init__(self, name, fullness = 50, hunger = 5):
         super().__init__(name, fullness, 100, hunger, 2)
 
+    def __str__(self):
+        return f"""
+        Extra Cuddly {self.name}:
+            Fullness: {self.fullness}
+            Happiness: {self.happiness}
+        """
 
     def cuddle(self, other_pet):
         other_pet.get_love()
