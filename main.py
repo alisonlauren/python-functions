@@ -11,6 +11,11 @@ main_menu = [
     "Do nothing",
 ]
 
+adoption_menu = [
+    "Pet",
+    "CuddlyPet"
+]
+
 def print_menu_error():
     print("That was not a valid choice. Try again.\n\n\n")    
 
@@ -38,4 +43,18 @@ def get_user_choice(choice_list):
 def main():    
     while True:
         choice = get_user_choice(main_menu)
+        if (choice == 1):
+            pet_name = input("What would you like your pet name to be? ")
+            type_choice = get_user_choice(adoption_menu)
+            if (type_choice == 1):
+                pets.append(Pet(pet_name))
+            elif (type_choice == 2):
+                pets.append(CuddlyPet(pet_name))
+            num_pets = len(pets)
+            print(f"You just added {pet_name}, and now you have {num_pets} pet(s)")
+
+        elif (choice == 4):
+            for pet in pets:
+                print(pet)
+            
 main()

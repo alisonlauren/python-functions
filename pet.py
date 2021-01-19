@@ -6,6 +6,13 @@ class Pet:
         self.happiness = happiness 
         self.hunger = hunger
         self.mopiness = mopiness
+    
+    def __str__(self):
+        return f"""
+            {self.name}:
+                fullness: {self.fullness}
+                happiness: {self.happiness}
+        """
 
         #methods in a class always have self inside param
     def eat_food(self):
