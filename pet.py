@@ -20,7 +20,7 @@ class Pet:
 
 #inherit from pet, don't need to change anything (pass)
 class CuddlyPet(Pet):
-    def __init__(self, name, fullness, hunger):
+    def __init__(self, name, fullness = 50, hunger = 5):
         super().__init__(name, fullness, 100, hunger, 2)
 
 
@@ -31,11 +31,5 @@ class CuddlyPet(Pet):
         self.fullness -= self.hunger
         self.happiness -= self.mopiness/2
 
-thor = Pet("Thor", 50, 20, 10, 1)
-nelson = Pet('Nelson', 100, 50, 5, 2)
 
-print(thor.name)
-print(thor.fullness)
-thor.eat_food()
-print(thor.fullness)
 
