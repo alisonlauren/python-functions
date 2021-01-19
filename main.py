@@ -1,4 +1,6 @@
 from pet import Pet, CuddlyPet
+from menu import Menu
+from pet import Bones, DayOldPotatoChildUnderCouch, humanFoodLeftOnTable
 
 # Begin with no pets.
 pets = []
@@ -9,11 +11,18 @@ main_menu = [
     "Feed Pet",
     "View status of pets",
     "Do nothing",
+    "Eat Treat"
 ]
 
 adoption_menu = [
     "Pet",
     "CuddlyPet"
+]
+
+treat_menu = [
+    "Bones",
+    "Day Old Potato Chip Under Couch",
+    "Human food left on the table"
 ]
 
 def print_menu_error():
@@ -40,7 +49,8 @@ def get_user_choice(choice_list):
             print_menu_error()
     return choice
 
-def main():    
+def main():   
+
     while True:
         choice = get_user_choice(main_menu)
         if (choice == 1):
@@ -64,6 +74,21 @@ def main():
         elif (choice == 4):
             for pet in pets:
                 print(pet)
+
+        elif (choice == 6):
+            print("Pick your treat, doggo!")
+            treat_choice = get_user_choice(treat_menu)
+            if treat_choice == 1:
+                for pet in pets:
+                    pet.eat_treat(Bones())
+            if treat_choice == 2:
+                for pet in pets:
+                    pet.eat_treat(DayOldPotatoChildUnderCouch())
+            if treat_choice == 3:
+                for pet in pets:
+                    pet.eat_treat(humanFoodLeftOnTable())
+                
+                
 
         for pet in pets:
             pet.be_alive()

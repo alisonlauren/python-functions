@@ -24,6 +24,9 @@ class Pet:
     def be_alive(self):
         self.fullness -= self.hunger
         self.happiness -= self.mopiness
+    def eat_treat(self, treat):
+        self.fullness += treat.tasty
+        self.happiness += treat.enjoy
 
 #inherit from pet, don't need to change anything (pass)
 class CuddlyPet(Pet):
@@ -37,6 +40,26 @@ class CuddlyPet(Pet):
     def be_alive(self):
         self.fullness -= self.hunger
         self.happiness -= self.mopiness/2
+
+class Treat:
+    def __init__(self, tasty = 10, enjoy = 10):
+        self.tasty = tasty
+        self.enjoy = enjoy
+
+class Bones(Treat):
+    def __init__(self):
+        super().__init__(40,75)
+
+class DayOldPotatoChildUnderCouch(Treat):
+    def __init__(self):
+        super().__init__(3, 45)
+
+class humanFoodLeftOnTable(Treat):
+    def __init__(self):
+        super().__init__(4000, 10000)
+
+
+
 
 
 
