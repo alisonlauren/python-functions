@@ -52,9 +52,20 @@ def main():
                 pets.append(CuddlyPet(pet_name))
             num_pets = len(pets)
             print(f"You just added {pet_name}, and now you have {num_pets} pet(s)")
+        
+        elif (choice == 2):
+            for pet in pets:
+                pet.get_love()
+
+        elif (choice == 3):
+            for pet in pets:
+                pet.eat_food()
 
         elif (choice == 4):
             for pet in pets:
                 print(pet)
+
+        for pet in pets:
+            pet.be_alive()
             
 main()
