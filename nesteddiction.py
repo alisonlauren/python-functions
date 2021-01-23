@@ -15,11 +15,11 @@ ramit = {
     }
   ]
 }
-print("  1. Ramit's email address:  ")
+# . Ramit's email address:
 print(ramit['email'])
-print("  2. First of Ramit's interests:  ")
+# 2. First of Ramit's interests: 
 print(ramit['interests'][0])
-print("  3. Jasmine's email address:  ")
+# Jasmine's email address: 
 print(ramit['friends'][0]['email'])
-print("  4. Second of Jan's interests:           ")
+# Second of Jan's interests:           ")
 print(ramit['friends'][1]['interests'][1])
