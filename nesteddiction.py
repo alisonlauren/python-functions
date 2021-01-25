@@ -13,6 +13,9 @@ ramit = {
       'email': 'jan@hotmail.com',
       'interests': ['movies', 'tv']
     }
+      'name': 'Jan',
+      'email': 'jan@hotmail.com',
+      'interests': ['movies', 'tv']
   ]
 }
 # . Ramit's email address:
